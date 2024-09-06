@@ -12,6 +12,8 @@ public class Student {
         this.name = name;
     }
 
+
+    
     // Getter and Setter for marks
     public int getMarks() {
         return marks;
@@ -22,12 +24,10 @@ public class Student {
         calculateGrade(); // Calculate grade whenever marks are set
     }
 
-    // Getter for grade
     public char getGrade() {
         return grade;
     }
 
-    // Method to calculate grade based on marks
     private void calculateGrade() {
         if (marks >= 90) {
             grade = 'A';
